@@ -47,7 +47,7 @@ public class CollegueCtrl {
         if(avis.getAction().equals(Action.AIMER)) {
             nouveauScore = ancienScore + 100;
         } else {
-            nouveauScore = ancienScore - 50;
+            nouveauScore = ancienScore - 100;
         }
 
         coco.setScore(nouveauScore);
