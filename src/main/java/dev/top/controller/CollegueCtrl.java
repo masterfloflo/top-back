@@ -36,7 +36,7 @@ public class CollegueCtrl {
 	}
 	*/
 	
-	@PatchMapping("{/pseudo}")
+	@PatchMapping("/{pseudo}")
     public Collegue patch(@PathVariable String pseudo,@RequestBody Avis avis) {
 
 		Collegue coco = this.corep.findByPseudo(pseudo);
