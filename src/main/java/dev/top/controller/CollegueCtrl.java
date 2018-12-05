@@ -30,11 +30,6 @@ public class CollegueCtrl {
 		return this.corep.findAll();
 	}
 
-	/*
-	@PatchMapping("{/pseudo}") 
-	public Collegue majCollegue(@PathVariable String nom, Avis action) {		
-	}
-	*/
 	
 	@PatchMapping("/{pseudo}")
     public Collegue patch(@PathVariable String pseudo,@RequestBody Avis avis) {
@@ -56,5 +51,10 @@ public class CollegueCtrl {
 
     }
 	
+	@GetMapping("/{pseudo}")
+
+	public Collegue trouvercol(@PathVariable String pseudo) {
+		return this.corep.findByPseudo(pseudo);
+	}
 	
 }
