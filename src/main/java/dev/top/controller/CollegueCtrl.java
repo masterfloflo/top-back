@@ -54,7 +54,8 @@ public class CollegueCtrl {
 	@GetMapping("/{pseudo}")
 
 	public Collegue trouvercol(@PathVariable String pseudo) {
-		return this.corep.findByPseudo(pseudo);
+		Collegue coco = this.corep.findByPseudo(pseudo);
+		return coco;
 	}
 	
 }
