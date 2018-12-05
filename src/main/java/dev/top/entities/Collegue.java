@@ -15,14 +15,23 @@ public class Collegue {
 	private String pseudo;
 	private String imageUrl;
 	
+	private String nom;
+	private String prenom;
+	private String adresse;
+	private String email;
 	
 	public Collegue() {}
 	
-	public Collegue(int score, String pseudo, String imageUrl) {
+	public Collegue(int score, String pseudo, String imageUrl, String nom, String prenom, String adresse, String email) {
 		super();
 		this.score = score;
 		this.pseudo = pseudo;
 		this.imageUrl = imageUrl;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.adresse = adresse;
+		this.email = email;
+		
 	}
 	public Integer getId() {
 		return id;
