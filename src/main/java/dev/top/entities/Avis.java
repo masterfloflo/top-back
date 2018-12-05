@@ -1,6 +1,13 @@
 package dev.top.entities;
 
 public class Avis {
-	enum Action {AIMER, DETESTER};
+	public enum Action {AIMER, DETESTER};
+	private Action action;
 	
+	public Action getAction() {
+		return action;
+	}
+	public void setAction(Action action) {
+		this.action = action;
+	}
 }
