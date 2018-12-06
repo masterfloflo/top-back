@@ -18,6 +18,7 @@ public class StartupDataInit {
     @Autowired
     CollegueRepo corep;
 
+
     @EventListener(ContextRefreshedEvent.class)
     public void init() {
 
@@ -33,15 +34,6 @@ public class StartupDataInit {
         this.corep.save(new Collegue(0, "Madame Loïc", "http://www.zoom-cinema.fr/media/photos/celebrites/17359/_thumbs/herve_png_250x250_q95.jpg", "Madame Loïc", "Madame Loïc", "Madame Loïc", "Madame Loïc"));
         this.corep.save(new Collegue(0, "Hervé", "http://2.bp.blogspot.com/-BqPWIsq5r1Q/Ts_uzrtabwI/AAAAAAAAHaE/DzakW16Jz_M/s1600/herve.jpg", "Hervé", "Hervé", "Hervé", "Hervé"));
         }
-        /*
-         * new Collegue("Hervé", 0, "Seulement 2 arrêts maladies", )),
-     new Collegue("Billy", 0, "Seulement 30min de retard tous les matins", [1, 2, 3, 4].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`)),
-     new Collegue("Hubert-bonisseur-delabatte", 0, "J'aime me battre", [1, 2, 3, 4].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`)),
-     new Collegue("Crouton", 0, "Vieux et moche", [1, 2, 3, 4].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`))
-        */
-    }
-    
-    
-    
-    
-}
+
+} }
+
